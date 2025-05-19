@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 0;
+}
+
+/* Fix for Leaflet marker icons */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  animation: none !important;
+} 

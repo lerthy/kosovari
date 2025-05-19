@@ -1,0 +1,10 @@
+This directory contains monster images for different issue categories:
+
+1. monster-traffic.png
+2. monster-environment.png
+3. monster-economy.png
+4. monster-living.png
+5. monster-damage.png
+6. monster-heritage.png
+
+Please place the monster image you shared in "monster-damage.png" and create images for the other categories as well. 
